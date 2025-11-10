@@ -1,1 +1,1 @@
-# gym-management-website
+# Gym Management Website
