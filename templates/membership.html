@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership - FitNova</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- <link rel="stylesheet" href="../style.css"> -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class=""><a class="logo" href="{{ url_for('home') }}">FitNova</a></div>
+            <div class="menu">
+                <img class="hamburger" src="/img/hamburger.svg" alt="">
+                <img src="/img/close.svg" alt="" class="close">
+            </div>
+            <ul class="ul">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('membership') }}" class="active">Memberships</a></li>
+                <li><a href="../Contact">Contact</a></li>
+                <div class="btn">
+                    <button>Register</button>
+                </div>
+            </ul>
+
+        </nav>
+    </header>
+    <section class="membership-hero">
+        <div class="membership-area">
+            <div class="ring" aria-hidden="true"></div>
+
+            <div class="membership-hero-top">
+                <div class="membership-hero-text">
+                    <h1>Find the plan that moves you</h1>
+                    <p class="sub">Flexible memberships, expert coaches, and classes for every level. Start where you
+                        are — get stronger, feel better.</p>
+                    <div class="hero-cta">
+                        <button class="primary">Get Started</button>
+                        <button class="ghost">Contact Us</button>
+                    </div>
+                </div>
+                <div class="membership-hero-img">
+                    <img src="/static/img/banner-img.png" alt="FitNova banner">
+                </div>
+            </div>
+
+            <div class="memberships-details" id="memberships-details">
+                <div class="membership-info">
+                    <h2>Our Memberships</h2>
+                    <p>Choose a plan that fits your lifestyle. All memberships include access to the gym, group classes,
+                        and priority booking in the app.</p>
+                </div>
+                <!-- <div class="img-div1">
+                    <img src="../img/explore.jpg" alt="explore">
+                </div> -->
+            </div>
+
+            <div class="membership-cards">
+                <div class="card">
+                    <div class="card-top">
+                        <h3>Basic</h3>
+                        <p class="price">1500 PKR <span>/mo</span></p>
+                    </div>
+                    <ul>
+                        <li>
+                            <svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Access to gym equipment
+                        </li>
+                        <li>
+                            <svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            1 group class / week
+                        </li>
+                        <li>
+                            <svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Standard support
+                        </li>
+                    </ul>
+                    <div class="card-cta">
+                        <button class="secondary">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="card featured">
+                    <div class="badge">Popular</div>
+                    <div class="card-top">
+                        <h3>Standard</h3>
+                        <p class="price">3000 PKR <span>/mo</span></p>
+                    </div>
+                    <ul>
+                        <li>
+                            <svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            All Basic features
+                        </li>
+                        <li>
+                            <svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Unlimited group classes
+                        </li>
+                        <li>
+                            <svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            App &amp; tracking
+                        </li>
+                    </ul>
+                    <div class="card-cta">
+                        <button class="primary">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-top">
+                        <h3>Premium</h3>
+                        <p class="price">6000 PKR <span>/mo</span></p>
+                    </div>
+                    <ul>
+                        <li>
+                            <svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Personal training credits
+                        </li>
+                        <li>
+                            <svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Priority support
+                        </li>
+                        <li>
+                            <svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Nutrition plan
+                        </li>
+                    </ul>
+                    <div class="card-cta">
+                        <button class="secondary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery">
+                <div class="gallery-item"><img src="/static/img/bg1.jpg" alt="gym"></div>
+                <div class="gallery-item"><img src="/static/img/bg.jpg" alt="weights"></div>
+                <div class="gallery-item"><img src="/static/img/why-us.png" alt="why us"></div>
+            </div>
+
+        </div>
+    </section>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <!-- <script src="/script.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - FitNova</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class=""><a class="logo" href="{{ url_for('home') }}">FitNova</a></div>
+            <div class="menu">
+                <img class="hamburger" src="img/hamburger.svg" alt="">
+                <img src="img/close.svg" alt="" class="close">
+            </div>
+            <ul class="ul">
+                <li><a href="{{ url_for('home') }}" class="active">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('membership') }}">Memberships</a></li>
+                <li><a href="Contact">Contact</a></li>
+                <div class="btn">
+                    <button>Register</button>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="main">
+            <div class="info">
+                <h1>Complete Daily <span>Workout </span>At Home</h1>
+                <p>Welcome to FitNova! Here you can focus on your fitness and health.</p>
+                <div class="join-btn">
+                    <button><a href="membership.html#memberships-details">Get Started Now</a></button>
+                </div>
+            </div>
+            <div class="img-div">
+                <img src="/static/img/banner-img.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="hero-2">
+        <div class="choose">
+            <div class="why-content">
+                <h1>Why Choose FitNova?</h1>
+                <p class="lead">Expert coaching, flexible plans, and a community that keeps you motivated. We make
+                    fitness simple and sustainable so you can build strength, confidence, and a routine that lasts.</p>
+
+                <ul class="why-features">
+                    <li>
+                        <svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        Certified coaches & results-driven programs
+                    </li>
+                    <li>
+                        <svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        Flexible memberships that fit your life (monthly, annual, premium)
+                    </li>
+                    <li>
+                        <svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        App-based booking, tracking, and simple payments
+                    </li>
+                    <li>
+                        <svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        Clean facilities, community events, and optional personal training
+                    </li>
+                </ul>
+
+                <div class="why-cta">
+                    <a class="btn primary" href="pages/membership.html">View Plans</a>
+                    <a class="btn ghost" href="Contact">Book a Visit</a>
+                </div>
+            </div>
+            <div class="img-div">
+                <img src="/static/img/why-us.png" alt="">
+            </div>
+        </div>
+    </section>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - FitNova</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+<body>
+    <!-- Header matches site theme -->
+    <header class="header">
+        <nav class="nav">
+            <div class=""><a class="logo" href="{{ url_for('home') }}">FitNova</a></div>
+            <div class="menu">
+                <img class="hamburger" src="/static/img/hamburger.svg" alt="menu">
+                <img src="/static/img/close.svg" alt="close" class="close">
+            </div>
+            <ul class="ul">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}" class="active">About</a></li>
+                <li><a href="{{ url_for('membership') }}">Memberships</a></li>
+                <li><a href="Contact">Contact</a></li>
+                <div class="btn">
+                    <button>Register</button>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sub-hero using existing visual language -->
+    <section class="sub-hero">
+        <div class="container sub-hero-inner">
+            <div class="copy">
+                <h1>About <span>FitNova</span></h1>
+                <p class="lead">We help people build consistent, sustainable fitness habits with expert coaching,
+                    flexible programs, and a supportive community.</p>
+                <div class="cta-row">
+                    <a class="btn primary" href="{{ url_for('membership') }}">View Plans</a>
+                    <a class="btn ghost" href="#values">Our Values</a>
+                </div>
+            </div>
+            <div class="art">
+                <img src="/static/img/explore.jpg" alt="Members training at FitNova">
+            </div>
+        </div>
+    </section>
+
+    <!-- Values / Why Us (re-uses why-* patterns) -->
+    <section id="values" class="about-section">
+        <div class="container">
+            <h2 class="section-title">What we stand for</h2>
+            <ul class="about-grid">
+                <li class="about-card">
+                    <div class="icon-check" aria-hidden="true"></div>
+                    <h3>Progress over perfection</h3>
+                    <p>Small, consistent wins beat occasional extremes. We program for real life.</p>
+                </li>
+                <li class="about-card">
+                    <div class="icon-check" aria-hidden="true"></div>
+                    <h3>Coaching with empathy</h3>
+                    <p>Certified trainers who meet you where you are and level you up safely.</p>
+                </li>
+                <li class="about-card">
+                    <div class="icon-check" aria-hidden="true"></div>
+                    <h3>Community first</h3>
+                    <p>Accountability, events, and group challenges to keep you motivated.</p>
+                </li>
+                <li class="about-card">
+                    <div class="icon-check" aria-hidden="true"></div>
+                    <h3>Data-driven training</h3>
+                    <p>Clear progress tracking and periodized plans to make results inevitable.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Story / Timeline -->
+    <section class="about-section">
+        <div class="container">
+            <h2 class="section-title">Our journey</h2>
+            <ol class="timeline">
+                <li>
+                    <div class="dot"></div>
+                    <div class="timecard">
+                        <h4>2019 — We opened our doors</h4>
+                        <p>Started with a compact studio and a big mission.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="dot"></div>
+                    <div class="timecard">
+                        <h4>2022 — Expanded coaching team</h4>
+                        <p>Added specialty tracks for strength, HIIT and mobility.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="dot"></div>
+                    <div class="timecard">
+                        <h4>2024 — App & analytics</h4>
+                        <p>Launched progress dashboards and class booking in-app.</p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="about-section">
+        <div class="container">
+            <h2 class="section-title">Meet the team</h2>
+            <div class="team-grid">
+                <article class="coach">
+                    <div class="avatar" role="img" aria-label="Coach A"></div>
+                    <h4>Alex Khan</h4>
+                    <p class="role">Head Coach — Strength</p>
+                </article>
+                <article class="coach">
+                    <div class="avatar" role="img" aria-label="Coach B"></div>
+                    <h4>Sana Malik</h4>
+                    <p class="role">Mobility & Recovery</p>
+                </article>
+                <article class="coach">
+                    <div class="avatar" role="img" aria-label="Coach C"></div>
+                    <h4>Hamza R.</h4>
+                    <p class="role">HIIT & Conditioning</p>
+                </article>
+                <article class="coach">
+                    <div class="avatar" role="img" aria-label="Coach D"></div>
+                    <h4>Ayesha A.</h4>
+                    <p class="role">Nutrition Coach</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="about-cta">
+        <div class="container cta-inner">
+            <div>
+                <h3>Ready to train with us?</h3>
+                <p>Grab a free intro session. No pressure—just good vibes.</p>
+            </div>
+            <a class="btn primary" href="{{ url_for('membership') }}">Get Started</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> FitNova — All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
