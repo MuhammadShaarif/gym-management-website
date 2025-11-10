@@ -1,48 +1,55 @@
-🏋️‍♂️ FitNova Gym Website
+# FitNova Gym Website
 
-A modern, responsive fitness website built with HTML, CSS, JavaScript, and Flask.
-It showcases gym services, memberships, facilities, and team members while maintaining a sleek dark-themed UI.
+This is a modern and responsive gym website designed for showcasing gym services, membership plans, facilities, and team information. The website is built using HTML, CSS, JavaScript, and Flask (Python) and follows a dark, clean, and premium theme across all pages.
 
-🚀 Features
+Pages Included
 
-Home Page: Hero section, gym introduction, highlight features, and image gallery.
+Home Page – Introduction, features, gallery, and call-to-action.
 
-About Page: Mission, team members, and facilities — fully theme-matched with the rest of the site.
+About Page – Mission, team members, and gym facilities.
 
-Membership Page: Plans, pricing cards, perks list, and registration button.
+Membership Page – Pricing plans, features, and registration option.
 
-Responsive Design: Works smoothly on desktop, tablet, and mobile.
+Technologies Used
 
-Reusable Layout: Shared header, footer, and navigation for all pages.
+HTML5 for structure
 
-Flask Ready: Uses /templates for HTML and /static/css for styling.
+CSS3 for styling and layout
 
-📂 Project Structure
-/templates
-   ├── index.html
-   ├── about.html
-   └── membership.html
+JavaScript for interactivity
 
-/static/css
-   └── style.css
+Flask (Python) for routing and template rendering
 
-/static/img
-   └── (website images)
+Folder Structure
+templates/
+   index.html
+   about.html
+   membership.html
 
-/app.py  (optional if using Flask)
+static/css/
+   style.css
 
-🎨 Styling
+static/img/
+   (images used in website)
 
-The website uses a dark gradient theme, soft shadows, minimal borders, and smooth hover animations for cards and buttons — creating a premium gym/fitness brand aesthetic.
+Features
 
-⚙️ How to Run (Flask)
+Fully responsive design
+
+Modern UI with gradients, shadows, and smooth animations
+
+Mobile-friendly navigation menu
+
+Reusable header and footer across all pages
+
+About page styled to match theme consistently
+
+How to Run
+
+If using Flask:
+
 python app.py
 
 
-Then open:
+Open the site at:
 http://127.0.0.1:5000/
-
-✅ Status
-
-The website is functional and visually complete.
-More backend features (like member login, payments, or admin dashboard) can be added in the future.
